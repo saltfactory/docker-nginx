@@ -11,7 +11,7 @@ RUN chown -R www-data:www-data /var/lib/nginx
 
 # mount sites-enabled and log from host directory
 #
-VOLUME ["/etc/nginx/sites-enabled","/var/log/nginx"]
+VOLUME ["/etc/nginx/sites-enabled","/var/log/nginx", "/etc/nginx/cert"]
 
 # set working directory
 #
